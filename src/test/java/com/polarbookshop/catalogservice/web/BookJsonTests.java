@@ -33,7 +33,7 @@ class BookJsonTests {
                     "price": 9.90
                 }
                 """;
-        assertThat(json.parse(content)).usingRecursiveComparison().isEqualTo(new Book("title","author",9.90));
+        assertThat(json.parse(content)).usingRecursiveComparison().isEqualTo(new Book("1234567890","title","author",9.90));
     }
 
 
